@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: headerFragment">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Форма входа</h1>
+    </div>
+    <div>
+        <p>Не авторизованная зона. Для просмотра списка пользователей пройдите авторизацию.</p>
+
+        <h2></h2>
+        <div class="well">
+            <b>Вход: </b><a th:href="@{/customers}">ссылка</a>
+        </div>
+    </div>
+    <div id="pagefoot" th:include="layout :: footerFragment">Footer
+    </div>
+</div>
+<!-- container -->
+
+</body>
+</html>
